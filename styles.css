@@ -109,3 +109,8 @@ section{
         font-size: 1.8em;
     }
 }
+@media (max-width:641px) {
+    body{
+        font-size: 12px;
+    }
+}
