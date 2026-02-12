@@ -1,42 +1,45 @@
-*{
-    font-family: 'Poppins' , sans-serif;
+* {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-header{
-  background-color: hsl(177, 100%, 38%);
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px ;
+header {
+    background-color: hsl(177, 100%, 38%);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
-.logo{
+
+.logo {
     text-decoration: none;
     color: #303030;
     font-weight: 1000;
     font-size: xx-large;
-
 }
-.navigation a{
+
+.navigation a {
     color: #303030;
     text-decoration: none;
     font-weight: 500;
     font-size: larger;
     padding-left: 30px;
+}
 
+.navigation a:hover {
+    color: rgb(197, 197, 197);
 }
-.navigation a:hover{
-color: rgb(197, 197, 197);
-}
-section{
+
+section {
     padding: 300px 1600px;
 }
+
 .main {
     width: 100%;
     min-height: 100vh;
@@ -47,70 +50,86 @@ section{
     background-position: center;
     background-attachment: fixed;
 }
-.main h2{
+
+.main h2 {
     color: rgb(36, 226, 226);
     font-size: 2.7em;
     font-weight: 500;
 }
-.main h2 span{
+
+.main h2 span {
     display: inline-block;
     margin-top: 20px;
     color: rgb(230, 229, 229);
-    font-size: 2.5em ;
+    font-size: 2.5em;
     font-weight: 600;
     padding: 0px 50px;
 }
-.main h3{
-    color:#00f8ec ;
+
+.main h3 {
+    color: #00f8ec;
     font-size: 2em;
     font-weight: 700;
-    letter-spacing:1px ;
+    letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
     padding: 4px 10px;
 }
-.main-btn{
+
+.main-btn {
     color: #973efd;
     background-color: #303030;
     text-decoration: none;
     font-size: 2.1em;
     font-weight: 700;
     display: inline-block;
-    padding: ; 2.9999em 4.1875em
-    letter-spacing: 1px;
+    padding: ;
+    2.9999em 4.1875em letter-spacing: 1px;
     border-radius: 12px;
     margin-bottom: 70px;
     transition: 1s ease;
-
 }
 
-.main-btn:hover{
+.main-btn:hover {
     background-color: #969696;
     transform: scale(1.1);
 }
+
 .social-icons a {
     color: #00f8ec;
     font-size: 1.7em;
     text-decoration: none;
     font-weight: 700;
     padding-right: 50px;
-    
-
 }
 
-@media (max-width:1023px){
-    header{
+@media (max-width:1023px) {
+    header {
         padding: 12px 20px;
     }
-    .navigation a{
+    .navigation a {
         padding-left: 10px;
     }
-    .title{
+    .title {
         font-size: 1.8em;
     }
+    section {
+        padding: 80px 20px;
+    }
+    .main-content h2 {
+        font-size: 1em;
+    }
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 @media (max-width:641px) {
-    body{
+    body {
         font-size: 12px;
     }
 }
